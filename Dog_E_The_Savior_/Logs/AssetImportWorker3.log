@@ -1,0 +1,903 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1052; Version 2009; 64bit' Language: 'ko' Physical Memory: 3985 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+51397
+Successfully changed project path to: D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_
+D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 78.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTS 450 (ID=0x1245)
+    Vendor:   
+    VRAM:     458 MB
+    Driver:   23.21.13.9135
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007234 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 73.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.609 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007978 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.226 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.26 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2087 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.7 MB.
+System memory in use after: 93.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2531.
+Total: 3.908100 ms (FindLiveObjects: 0.300900 ms CreateObjectMapping: 0.100500 ms MarkObjects: 3.393300 ms  DeleteObjects: 0.111000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b45d2f065c2d5a8418d8378abc0802d') in 0.081382 seconds
+  Import took 0.110996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.824959 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd89eb02ca86a823689cbee61057853') in 0.068646 seconds
+  Import took 0.087906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.796534 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9d3763b50d3d227739e9e0f56b1f37') in 0.018948 seconds
+  Import took 0.050664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.006938 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76ae7bb98bc842e912c5dbbff0b7804') in 0.032358 seconds
+  Import took 0.052858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.324089 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bac509805ae9e0f8e8e3f89a2fa4e6a') in 0.045015 seconds
+  Import took 0.061920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.063912 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9fbf02605abe5ce6255ddb4c8e30225') in 0.025735 seconds
+  Import took 0.040605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.071579 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf8138a18a3cc8e133960d1c3158d36') in 0.035599 seconds
+  Import took 0.068802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.382803 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a15136e0c0ac407584df539e8819e54f') in 0.025898 seconds
+  Import took 0.046759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.442299 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61aa84a65a942ff5fb13415924b61de') in 0.142487 seconds
+  Import took 0.171622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067359 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3924a7bdc649643aee4f1e3a372c7f94') in 0.011415 seconds
+  Import took 0.031630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034725 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3924a7bdc649643aee4f1e3a372c7f94') in 0.072232 seconds
+  Import took 0.095156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.727654 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979977c91889b92ae5383043f3835e8b') in 0.019292 seconds
+  Import took 0.046671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.611381 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b320acea173c6ee591c6526545d0ad46') in 0.030806 seconds
+  Import took 0.043083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.410689 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5acce01dd20f2c9a0339af321f92f702') in 0.015348 seconds
+  Import took 0.029799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.289442 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c36d20c1c018e10c55d7be3a06207e') in 0.037242 seconds
+  Import took 0.049537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.438130 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333d229f1b212d80bf28fd20e72df2d2') in 0.031532 seconds
+  Import took 0.050868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.262837 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7e1c360fc9cdb0d54179c392b88652') in 0.145291 seconds
+  Import took 0.159804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.330055 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0238d7b80ae2ebe83f0a0bcee147237a') in 0.025979 seconds
+  Import took 0.041681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.830690 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d47ee542fa76688a4927382a70ca0a') in 0.021670 seconds
+  Import took 0.028941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.095318 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff01bf66b6a690b8ec0452756805f92') in 0.026165 seconds
+  Import took 0.043750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.609214 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e83d8bab49a4832dea8504713ce7767') in 0.017014 seconds
+  Import took 0.031967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.243536 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1d59dd723a7961aeac8f3c5aa09cb1') in 0.014142 seconds
+  Import took 0.019834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.602244 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06726d1c3194f0fb7a370ea5fd9e5df2') in 0.016111 seconds
+  Import took 0.037796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.892988 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79115ce226ccd8b04b27dced22744874') in 0.017844 seconds
+  Import took 0.037565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.699735 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd65285e8ddc70ab11e9fcfc66289b4d') in 0.023911 seconds
+  Import took 0.046373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.176362 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1997b5fda8da48366643f64e2fe47d') in 0.029966 seconds
+  Import took 0.045790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.586714 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3805ccae6c101829c7d9c3fdc88548b6') in 0.036454 seconds
+  Import took 0.055683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.501998 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac01e17c88c374140d3f7ec6ef8b2d9') in 0.017037 seconds
+  Import took 0.041206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.707437 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3521e49d4836c8c0850ec6ebc01f625') in 0.024452 seconds
+  Import took 0.061020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.139925 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2218b4365ba01d8d3b34c3510258c4') in 0.023446 seconds
+  Import took 0.051317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.455920 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a88789cba8fe76d43a1a6dd162cfeb9') in 0.019207 seconds
+  Import took 0.025974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004014 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a88789cba8fe76d43a1a6dd162cfeb9') in 0.036528 seconds
+  Import took 0.042328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.752713 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0363d1fad5a27c6a48db42046d300412') in 0.036709 seconds
+  Import took 0.048494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.527938 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00450425d978d31876a3a30f330ef790') in 0.021368 seconds
+  Import took 0.038588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.968082 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31ed7121ba1506b8c896cc06fcf5362') in 0.014245 seconds
+  Import took 0.031022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.617162 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9af4f1a3ae9bf1e4aeb1c55196f550') in 0.019029 seconds
+  Import took 0.026160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.316317 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413b96682842c2fc5221a6622f99bb0a') in 0.019457 seconds
+  Import took 0.034935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.691039 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.019136 seconds
+  ERROR: Build asset version error: assets/02.scripts/enemy/enemybulletscr.cs in SourceAssetDB has modification time of '2021-07-05T08:15:58.6012295Z' while content on disk has modification time of '2021-07-05T08:15:58.8031045Z'
+  Import took 0.024153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.115539 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000432 seconds
+  ERROR: Build asset version error: assets/02.scripts/enemy/enemybulletscr.cs in SourceAssetDB has modification time of '2021-07-05T08:15:58.6012295Z' while content on disk has modification time of '2021-07-05T08:15:58.8031045Z'
+  Import took 0.005755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059596 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001399 seconds
+  ERROR: Build asset version error: assets/02.scripts/enemy/enemybulletscr.cs in SourceAssetDB has modification time of '2021-07-05T08:15:58.8031045Z' while content on disk has modification time of '2021-07-05T08:15:58.9779072Z'
+  Import took 0.006782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029584 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000630 seconds
+  ERROR: Build asset version error: assets/02.scripts/enemy/enemybulletscr.cs in SourceAssetDB has modification time of '2021-07-05T08:15:58.8031045Z' while content on disk has modification time of '2021-07-05T08:15:58.9779072Z'
+  Import took 0.004796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036308 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyBulletScr.cs
+  artifactKey: Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyBulletScr.cs using Guid(494ce9b937b131d47a37cd9e8f98a871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60419585f8b8d4d2b6c5cf16a854b5c') in 0.014624 seconds
+  Import took 0.027525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.395822 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyStelarScr.cs
+  artifactKey: Guid(6332a50edb918e94c995cd620aee5c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyStelarScr.cs using Guid(6332a50edb918e94c995cd620aee5c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ffa17af945f900833d2f43c8d8eec9') in 0.036153 seconds
+  Import took 0.055896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.635899 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff04fe1bb94e201aba28617fa0e1508') in 0.110464 seconds
+  Import took 0.164445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.684751 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff6743c6062 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff674391922 (Unity) ResolveArtifactV2
+0x00007ff6743b1090 (Unity) ImportToObjects
+0x00007ff6743b0569 (Unity) ImportAsset
+0x00007ff6743126d8 (Unity) AssetImportWorker::Import
+0x00007ff6743665bf (Unity) <lambda_e7e5f5e49556456463706cfa5dd72d0a>::operator()
+0x00007ff674409522 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff67440b680 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff67440ee0e (Unity) asio::io_service::run
+0x00007ff6743924bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff674392510 (Unity) RunAssetImporterV2
+0x00007ff673883536 (Unity) Application::InitializeProject
+0x00007ff674206f22 (Unity) WinMain
+0x00007ff676058e86 (Unity) __scrt_common_main_seh
+0x00007ff9e9a27034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9ea4a2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(c963434bf8bf7984dbd3aa8774499408) Importer(-1,00000000000000000000000000000000), Assets/02.Scripts/Common/GameManager.cs from editor
+Resuming Guid(c963434bf8bf7984dbd3aa8774499408) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 (aborted)
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff6743c6062 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff674391922 (Unity) ResolveArtifactV2
+0x00007ff6743886c1 (Unity) ProduceArtifactV2
+0x00007ff6742dc36e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff6742c1928 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff6743b1459 (Unity) ImportToObjects
+0x00007ff6743b0569 (Unity) ImportAsset
+0x00007ff6743126d8 (Unity) AssetImportWorker::Import
+0x00007ff6743665bf (Unity) <lambda_e7e5f5e49556456463706cfa5dd72d0a>::operator()
+0x00007ff674409522 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff67440b680 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff67440ee0e (Unity) asio::io_service::run
+0x00007ff6743924bb (Unity) RunAssetImportWorkerClientV2
+0x00007ff674392510 (Unity) RunAssetImporterV2
+0x00007ff673883536 (Unity) Application::InitializeProject
+0x00007ff674206f22 (Unity) WinMain
+0x00007ff676058e86 (Unity) __scrt_common_main_seh
+0x00007ff9e9a27034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9ea4a2651 (ntdll) RtlUserThreadStart
+
+Sub-import of Guid(c963434bf8bf7984dbd3aa8774499408) Importer(-1,00000000000000000000000000000000), Assets/02.Scripts/Common/GameManager.cs skipped because a previous one failed already
+ -> (artifact id: '0a4c88391e739ad5d6e1f38c8ff280be') in 5.737519 seconds
+  Import took 5.918138 seconds (was aborted).
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd96a2720e9578899df8d35548786038') in 0.013859 seconds
+  Import took 0.038059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.866953 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3731f2b853c82e520a56d1be974cbba5') in 0.019904 seconds
+  Import took 0.094790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.107056 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b6b842c91142d580b9e38be3b9ffce2') in 0.017998 seconds
+  Import took 0.052866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.775600 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e357b8d26a41cba33df840ea8918bb') in 1.947757 seconds
+  Import took 2.374665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.328709 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26e46c94dac1f6c70f3639a3b92040b') in 0.012258 seconds
+  Import took 0.522618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.911067 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26e46c94dac1f6c70f3639a3b92040b') in 0.112553 seconds
+  Import took 0.155943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.562947 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d4f97be661d937cf1a71d6f3a0c3b5e') in 1.197476 seconds
+  Import took 1.262298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.116524 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d4f97be661d937cf1a71d6f3a0c3b5e') in 0.017055 seconds
+  Import took 0.044194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.991526 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cfa3fb2d8bab674116a7057d341e9f0') in 0.034968 seconds
+  Import took 0.201177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.764385 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d833bcb2971fb5ecdae520eb826585a') in 0.005377 seconds
+  Import took 0.045916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.904848 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1608863a2331f68523a3b6191c34b2') in 0.008769 seconds
+  Import took 0.021400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056870 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1608863a2331f68523a3b6191c34b2') in 0.057719 seconds
+  Import took 0.067194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.074850 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e09294b492a30ce1ccd4cee64383ba') in 0.004523 seconds
+  Import took 0.207232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.876450 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df219bf0b830a7604e1c42fed04bf14') in 0.013353 seconds
+  Import took 0.098922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.624214 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7336c612aa564fcea740e135caaa244b') in 0.005921 seconds
+  Import took 0.022505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.093098 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7336c612aa564fcea740e135caaa244b') in 0.010877 seconds
+  Import took 0.063040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.033017 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3550859a4dc63b7b26112ff7e6da1775') in 0.033378 seconds
+  Import took 0.130588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.262812 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3089a6e78571e8ac228cdcaa120cc37') in 0.043455 seconds
+  Import took 0.073451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.564338 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3583c015ae7dc03d058774c6362e59d3') in 0.006008 seconds
+  Import took 0.019777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.585593 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6927178a060f5139bee5dcb15dee677') in 0.009218 seconds
+  Import took 0.037002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.768912 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3690244bcbe443e25a35a5c800adc96c') in 0.009129 seconds
+  Import took 0.029240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.116987 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3690244bcbe443e25a35a5c800adc96c') in 0.038466 seconds
+  Import took 0.044677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.130841 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc241597a96b2bd9b1e539fffe17026') in 0.003763 seconds
+  Import took 0.064060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.101143 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc241597a96b2bd9b1e539fffe17026') in 0.142370 seconds
+  Import took 0.149161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.638687 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26cd2f222eff876c6bf283b5d6dab9a') in 0.006852 seconds
+  Import took 0.035795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.609291 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27409d7f3ad30f823b77bbcb3030b0d4') in 0.008564 seconds
+  Import took 0.029781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.448813 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b98250323b418b0a39e781c2fd402b9') in 0.027287 seconds
+  Import took 0.251179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.224071 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9793dc4bcda1c11167dc83aee2a1b729') in 0.021454 seconds
+  Import took 0.088645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.650664 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41638fbbe350b12edf2fe1e89347cecb') in 0.009341 seconds
+  Import took 0.027057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.383141 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40cdffe06eb4a53ecf78742b6af242f1') in 0.089437 seconds
+  Import took 0.121070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.450194 seconds.
+  path: Assets/02.Scripts/Common/GameManager.cs
+  artifactKey: Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Common/GameManager.cs using Guid(c963434bf8bf7984dbd3aa8774499408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb9de80cbbb0037b31b0d4671af7f2c') in 0.029857 seconds
+  Import took 0.040805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.962185 seconds.
+  path: Assets/02.Scripts/Enemy/EnemyAD.asmdef
+  artifactKey: Guid(4376a731f731edf4ebe2bdae9930e547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Scripts/Enemy/EnemyAD.asmdef using Guid(4376a731f731edf4ebe2bdae9930e547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7a6e840f5926b0c6373c9e0b6716149') in 0.063118 seconds
+  Import took 0.089367 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.067558 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.2 MB.
+System memory in use after: 93.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2536.
+Total: 22.335900 ms (FindLiveObjects: 0.680900 ms CreateObjectMapping: 0.105600 ms MarkObjects: 21.502800 ms  DeleteObjects: 0.043800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.063644 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.765 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.3 MB.
+System memory in use after: 93.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2540.
+Total: 17.547100 ms (FindLiveObjects: 1.185700 ms CreateObjectMapping: 0.122800 ms MarkObjects: 16.184100 ms  DeleteObjects: 0.051600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.037357 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.855 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.3 MB.
+System memory in use after: 93.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2544.
+Total: 3.588500 ms (FindLiveObjects: 0.330700 ms CreateObjectMapping: 0.135900 ms MarkObjects: 2.767900 ms  DeleteObjects: 0.347800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008727 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.815 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.3 MB.
+System memory in use after: 93.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2548.
+Total: 2.893200 ms (FindLiveObjects: 0.240600 ms CreateObjectMapping: 0.104500 ms MarkObjects: 2.499600 ms  DeleteObjects: 0.046400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006705 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.714 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.3 MB.
+System memory in use after: 93.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2552.
+Total: 2.937600 ms (FindLiveObjects: 0.245200 ms CreateObjectMapping: 0.096600 ms MarkObjects: 2.558200 ms  DeleteObjects: 0.035500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007411 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.584 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.4 MB.
+System memory in use after: 93.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2556.
+Total: 3.186000 ms (FindLiveObjects: 0.221000 ms CreateObjectMapping: 0.099800 ms MarkObjects: 2.818400 ms  DeleteObjects: 0.045200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1899.112564 seconds.
+  path: Assets/Resources/Prefabs/Bullets/Bullet.prefab
+  artifactKey: Guid(b2a1579cee9f562429fe6ec25e896469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/Bullet.prefab using Guid(b2a1579cee9f562429fe6ec25e896469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04ddd73913847e2d3c9a829ed4e43af') in 0.385926 seconds
+  Import took 0.402091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.643063 seconds.
+  path: Assets/Resources/Prefabs/Bullets/Bullet.prefab
+  artifactKey: Guid(b2a1579cee9f562429fe6ec25e896469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/Bullet.prefab using Guid(b2a1579cee9f562429fe6ec25e896469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9119beacf85646fdf3767df1a4e6598d') in 0.034285 seconds
+  Import took 0.039871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.172271 seconds.
+  path: Assets/Resources/Prefabs/Bullets/Bullet_Stelar.prefab
+  artifactKey: Guid(20a557ff7cbd8934a9135df9cf99c0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/Bullet_Stelar.prefab using Guid(20a557ff7cbd8934a9135df9cf99c0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204bf1fd9f46dd903f2962180494e929') in 0.056824 seconds
+  Import took 0.080221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.802822 seconds.
+  path: Assets/Resources/Prefabs/Bullets/Bullet_Stelar.prefab
+  artifactKey: Guid(20a557ff7cbd8934a9135df9cf99c0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/Bullet_Stelar.prefab using Guid(20a557ff7cbd8934a9135df9cf99c0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b65a1754675b6cf45283a3702ec949a') in 0.030168 seconds
+  Import took 0.048067 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006304 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.640 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 96.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2567.
+Total: 2.872200 ms (FindLiveObjects: 0.229400 ms CreateObjectMapping: 0.106300 ms MarkObjects: 2.483700 ms  DeleteObjects: 0.051200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
