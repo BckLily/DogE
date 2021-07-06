@@ -14,25 +14,39 @@ abstract public class EnemyInfo : MonoBehaviour
     [SerializeField]
     protected float hp;    // 적 캐릭터 체력
 
-    [Header("- Enemy Up Down State")]
-    [SerializeField]
+    //[Header("- Enemy Up Down State")]
+    //[SerializeField]
     protected float updownSpeed; // 상하 이동 속도
-    [SerializeField]
+    //[SerializeField]
     protected float updownTime; // 상하 이동 동작 경과 시간
-    [SerializeField]
+    //[SerializeField]
     protected float updownDelay; // 상하 이동 동작 변경 딜레이
-    [SerializeField]
+    //[SerializeField]
     protected Vector3 updownState; // 상하 이동 상태
 
-
     protected Vector3 moveDir;    // 적 캐릭터 이동 방향
-    [Header("- Enemy Bullet")]
-    [SerializeField]
+
+    //[Header("- Enemy Bullet")]
+    //[SerializeField]
     protected GameObject bullet;    // 적 캐릭터 총알
-    [SerializeField]
+    //[SerializeField]
     protected float fireDelay; // 적 캐릭터 총알 발사 딜레이
     protected float fireTime; // 마지막에 총알 발사 후 경과 시간.
 
+
+    [Header("- Player Increase Damage")]
+    [SerializeField]
+    protected float[] incDamageList = { 0.5f, 0.75f, 1.0f };
+    protected enum EnemyType
+    {
+        normal = 0, middleBoss, Boss,
+    }
+    [SerializeField]
+    protected EnemyType enemyType;
+
+    abstract protected void EnemyMove();
+    abstract protected void updownMove();
+    abstract protected void horiMove();
 
 
 

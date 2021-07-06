@@ -12,6 +12,9 @@ public class BGRepeatScr : MonoBehaviour
     Vector2 offset;
 
     public float speed; // 배경의 이동 속도
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class BGRepeatScr : MonoBehaviour
         speed = 0.3f;
 
     }
+
 
     // Update is called once per frame
     void Update()
@@ -39,4 +43,7 @@ public class BGRepeatScr : MonoBehaviour
         // 변경된 offset 값을 material의 mainTextureOffset에 넣어 적용시킨다.
         mat.mainTextureOffset = offset;
     }
+
+
+
 }

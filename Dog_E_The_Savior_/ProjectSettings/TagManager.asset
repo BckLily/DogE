@@ -10,6 +10,9 @@ TagManager:
   - ENEMY
   - BULLET
   - E_BULLET
+  - WALL
+  - SHIELD
+  - ITEM
   layers:
   - Default
   - TransparentFX

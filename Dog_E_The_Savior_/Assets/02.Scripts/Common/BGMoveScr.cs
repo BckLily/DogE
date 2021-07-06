@@ -29,6 +29,7 @@ public class BGMoveScr : MonoBehaviour
         
     }
 
+
     private void FixedUpdate()
     {
         // 배경을 moveDir 방향으로 speed의 만큼 움직임
@@ -58,12 +59,15 @@ public class BGMoveScr : MonoBehaviour
             }
         }
 
-
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
         
     }
+
+
 }

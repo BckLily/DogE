@@ -23,7 +23,7 @@ public class EnemyBulletScr : MonoBehaviour
         tr = GetComponent<Transform>();
 
         // ÃÑ¾ËÀÇ ÀÌµ¿ ¼Óµµ
-        speed = 3f;
+        speed = 8f;
         // ÃÑ¾ËÀÇ Å¸°Ù ÅÂ±×
         targetTag = "PLAYER";
 
@@ -44,13 +44,13 @@ public class EnemyBulletScr : MonoBehaviour
         tr.position += moveDir * speed * Time.deltaTime;
     }
 
+
+
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    if (collision.CompareTag(targetTag))
+    //    if (collision.CompareTag("SHIELD"))
     //    {
-
-    //        collision.GetComponent<PlayerCtrl>();
-
+    //        Destroy(this.gameObject);
     //    }
     //}
 

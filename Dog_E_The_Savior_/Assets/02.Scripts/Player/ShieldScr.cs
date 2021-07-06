@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ShieldScr : MonoBehaviour
+{
+
+    string targetTag = "E_BULLET";
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag(targetTag))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
+}

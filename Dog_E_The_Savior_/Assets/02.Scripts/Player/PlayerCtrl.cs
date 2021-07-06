@@ -6,9 +6,9 @@ public class PlayerCtrl : MonoBehaviour
 {
     GameObject player; // 플레이어 게임 오브젝트
     Transform tr; // 플레이어 오브젝트 위치
-    SpriteRenderer playerImage; // 플레이어 오브젝트 이미지
+    //SpriteRenderer playerImage; // 플레이어 오브젝트 이미지
 
-    GameManager GameMgr; // 게임 매니저 오브젝트
+    GameManager gameMgr; // 게임 매니저 오브젝트
 
     [Header("- Player Speed")]
     [SerializeField]
@@ -37,7 +37,14 @@ public class PlayerCtrl : MonoBehaviour
 
     GameObject bullet; // 플레이어가 공격시 생성할 bullet
 
+    GameObject shield; // 플레이어의 실드 오브젝트
+    public bool isShieldActive; // 플레이어의 실드가 활성화 상태인지 체크
+    public float shieldActiveTime; // 실드의 지속시간
 
+
+    List<GameObject> enemies; // 폭탄 사용시 제거될 ENEMY, ENEMTBULLET 들.
+
+    bool isBoom; // 폭발 중인가
 
     // Start is called before the first frame update
     void Start()
@@ -48,18 +55,19 @@ public class PlayerCtrl : MonoBehaviour
         player = gameObject;
         // 플레이어 오브젝트 이미지 렌더러 저장
         // 무적 상태일 때 Active 상태 조절
-        playerImage = GetComponent<SpriteRenderer>();
+        //playerImage = GetComponent<SpriteRenderer>();
 
-        GameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
+        gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
 
-
+        // 플레이어 총알 오브젝트 위치
         var _bullet_Path = "Prefabs/Bullets/Bullet";
         bullet = Resources.Load<GameObject>(_bullet_Path);
 
+        enemies = new List<GameObject>();
 
         // 플레이어의 이동속도
         // 이동속도는 3f 빠른 이동은 기본 이속 1.3 느린 이동은 기본 이속 0.7
-        speed = 7f;
+        speed = 8f;
         speed_fast = speed * 1.5f;
         speed_slow = speed * 0.4f;
 
@@ -75,12 +83,20 @@ public class PlayerCtrl : MonoBehaviour
 
         // 가지고 있는 폭탄의 개수
         boomCount = 1;
-
+        isBoom = false;
 
         // 피격 가능한 상태인가
         canDamaged = true;
         // 무적 시간 설정 3초
         damagedDelay = 3f;
+
+        // 플레이어의 child인 shield를 찾는다.
+        shield = tr.Find("Shield").gameObject;
+        // 초기 활성화 상태는 비활성화
+        isShieldActive = true;
+        shield.SetActive(isShieldActive);
+        // 실드의 지속시간은 3초로 설정한다.
+        shieldActiveTime = 3f;
 
 
     }
@@ -133,6 +149,8 @@ public class PlayerCtrl : MonoBehaviour
         // 공격 딜레이를 공격 속도에서 증가한 공격속도 만큼 뺌.
         var atkDelay = atkSpeed - atkSpeedUp;
 
+        //Debug.Log("Attack Delay: " + atkDelay);
+
         // 공격 버튼인 J키를 누르면
         if (Input.GetKey(KeyCode.J))
         {
@@ -153,6 +171,22 @@ public class PlayerCtrl : MonoBehaviour
             lastAtkTime = atkDelay;
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            UseBoom();
+        }
+
+        ActiveShield();
+
+        if (isBoom)
+        {
+            RemoveEnemy();
+        }
+        //else
+        //{
+        //    StopCoroutine(RemoveEnemy());
+        //}
+
 
     }
 
@@ -167,7 +201,7 @@ public class PlayerCtrl : MonoBehaviour
         // 총알의 데미지를 설정.
         // 기본 공격력 + 추가된 공격력.
         //var b_damage = atkDamage + atkDamageUp;
-        float b_damage = GameMgr.GetBulletDamage();
+        float b_damage = gameMgr.GetBulletDamage();
 
         // 총알을 생성하고 변수에 대입하여 사용할 수 있게 함.
         var _bullet = Instantiate(bullet, bulletPos, Quaternion.identity);
@@ -176,25 +210,104 @@ public class PlayerCtrl : MonoBehaviour
 
     }
 
-    
+    // 실드 상태를 조절하는 함수
+    public void ActiveShield()
+    {
+        // 실드 활성화 시간이 0보다 크면
+        if (shieldActiveTime > 0)
+        {
+            // 실드를 활성화 시킨다.
+            shield.SetActive(isShieldActive);
+            // 실드 활성화 시간을 감소시킨다.
+            shieldActiveTime -= Time.deltaTime;
+        }
+        // 실드가 활성화 되어있고 활성화 시간이 0보다 작거나 같으면
+        else if (isShieldActive == true)
+        {
+            // 활성화 시간을 0으로 만든다.
+            shieldActiveTime = 0f;
+            // 실드 활성화 상태를 비활성화로 만든다.
+            isShieldActive = false;
+            shield.SetActive(isShieldActive);
+        }
+
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // 적의 총알과 충돌
         if (collision.CompareTag("E_BULLET"))
         {
-            // 감소시킬 랜덤한 퍼센트
-            var per = Random.Range(0.1f, 0.3f);
-            // min decrease / max decrease
-            // 최소 감소, 최대 감소
+            // 적의 총알을 없앤다.
+            Destroy(collision.gameObject);
 
-            // 받아온 현재 공격력에서 감소시킬 퍼센트를 곱한다.
-            var dmg = GameMgr.GetBulletDamage() * per;
-
-            // 플레이어가 맞았다는 것을 알려준다.
-            GameMgr.PlayerHit(dmg);
-            
+            // 실드가 비활성화일 경우
+            if (shield.activeSelf == false)
+            {
+                // 플레이어가 맞았다는 것을 알려준다.
+                gameMgr.PlayerHit();
+            }
         }
     }
+
+    void UseBoom()
+    {
+        // 폭발 애니메이션 넣으면 좋을 듯.
+
+        // 가지고 있는 폭탄이 1개 이상일 경우
+        if (gameMgr.boomCount > 0)
+        {
+            // 소지한 폭탄의 개수를 1개 줄인다.
+            gameMgr.UseBoomItem();
+            //Debug.Log("USE BOOM");
+
+            // ENEMY Tag와 E_BULLET Tag를 가진 모든 GameObject를 검출한다.
+            GameObject[] enemyTags = GameObject.FindGameObjectsWithTag("ENEMY");
+            GameObject[] eBulletTags = GameObject.FindGameObjectsWithTag("E_BULLET");
+
+            // 검출된 것들을 enemies 리스트에 추가한다.
+            enemies.AddRange(enemyTags);
+            enemies.AddRange(eBulletTags);
+
+
+            // 전부 제거한다.
+            isBoom = true;
+
+        }
+    }
+
+    void RemoveEnemy()
+    {
+        int enemyCount = enemies.Count;
+
+        if (enemyCount == 0)
+        {
+            isBoom = false;
+        }
+
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+        // 코루틴 처리해서 문제 없이 제거하는 방법은 없나...
+
+        enemies.Clear();
+    }
+
+    
+    //IEnumerator RemoveEnemy()
+    //{
+    //    yield return new WaitForSeconds(Time.deltaTime);
+    //    int enemyCount = enemies.Count;
+    //    if (enemyCount == 0)
+    //    {
+    //        isBoom = false;
+    //        StopCoroutine(RemoveEnemy());
+    //        yield return null;
+    //    }
+    //    Destroy(enemies[enemyCount - 1]);
+    //    enemies.RemoveAt(enemyCount - 1);
+    //}
 
 
 }

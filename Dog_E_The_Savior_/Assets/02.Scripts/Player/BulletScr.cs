@@ -44,17 +44,20 @@ public class BulletScr : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-        if (collision.CompareTag(targetTag))
-        {
 
 
-            // Enemy¿Í ºÎµúÈ÷¸é Á¦°ÅµÊ.
-            Destroy(this.gameObject);
-        }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
 
-    }
+    //    if (collision.CompareTag(targetTag))
+    //    {
+
+
+    //        // Enemy¿Í ºÎµúÈ÷¸é Á¦°ÅµÊ.
+    //        Destroy(this.gameObject);
+    //    }
+
+    //}
+
 
 }
