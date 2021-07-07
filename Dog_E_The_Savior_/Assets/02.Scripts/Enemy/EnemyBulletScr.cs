@@ -11,7 +11,7 @@ public class EnemyBulletScr : MonoBehaviour
 
     Vector3 moveDir; // 총알의 이동 방향
 
-    [SerializeField]
+    //[SerializeField]
     float removeTime; // 총알 제거 시간
 
 
@@ -28,7 +28,7 @@ public class EnemyBulletScr : MonoBehaviour
         targetTag = "PLAYER";
 
         // 총알의 이동 방향
-        moveDir = Vector3.left;
+        moveDir = -tr.right;
 
         removeTime = 5f;
 

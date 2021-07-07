@@ -7,38 +7,45 @@ public class EnemyStelarScr : EnemyInfo
 
     float enemyMaxLeftPos;
 
-    // AtkSpeedUp / BoomItem / DamageUp / ScoreUp / ShieldItem
-    [SerializeField]
-    GameObject[] items; // 아이템들을 저장해두는 리스트 변수
-    enum ItemType
-    {
-        AtkSpeedUp = 0, BoomItem, DamageUp, ScoreUp, ShieldItem,
-    }
+    //// AtkSpeedUp / BoomItem / DamageUp / ScoreUp / ShieldItem
+    //[SerializeField]
+    //GameObject[] items; // 아이템들을 저장해두는 리스트 변수
+    //enum ItemType
+    //{
+    //    AtkSpeedUp = 0, BoomItem, DamageUp, ScoreUp, ShieldItem,
+    //}
 
 
     // Start is called before the first frame update
     void Start()
     {
-        // Stelar Enemy 위치 저장
-        tr = GetComponent<Transform>();
+        //// Stelar Enemy 위치 저장
+        //tr = GetComponent<Transform>();
 
-        gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
+        //gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
+
 
         // Stelar Enemy 이동 속도
-        speed = 4f;
+        speed = 3.5f;
         // Stelar Enemy HP
-        hp = 10 + Random.Range(1, 11) + Random.Range(1, 11);
+        hp = 10 + HpDice((int)DiceCount.normal, (float)MaxHPperDice.normal);
         // hp *= stageCorr; // 스테이지의 진행에 따라 hp에 대한 보정이 들어간다. correction
+        Debug.Log("Stelar HP: " + hp);
+
 
         // Stelar Enemy가 기본적으로 움직이는 방향
         moveDir = Vector3.left;
 
         // Stelar Enemy가 발사할 총알
-        string _bulletPath = "Prefabs/Bullets/Bullet_Stelar";
+        string _bulletPath = "Prefabs/Bullets/Stelar/Bullet_Stelar";
         bullet = Resources.Load<GameObject>(_bulletPath);
-
+        // Stelar Enemy가 죽으면 생성할 아이템 들
         string _itemsPath = "Prefabs/Items/";
         items = Resources.LoadAll<GameObject>(_itemsPath);
+        // Stelar Enemy가 죽으면 발생할 애니메이션
+        string expAnimPath = "Prefabs/Animations/ExpAnim";
+        expAnim = Resources.Load<GameObject>(expAnimPath);
+        expAnimScale = Vector3.one;
 
 
 
@@ -85,6 +92,7 @@ public class EnemyStelarScr : EnemyInfo
 
     }
 
+    // 적 캐릭터의 공격
     void Fire()
     {
         // 마지막 발사 시간을 증가시킨다.
@@ -119,11 +127,20 @@ public class EnemyStelarScr : EnemyInfo
             // Stelar의 체력이 0이하일 경우
             if (hp <= 0)
             {
+                // 플레이어의 공격력을 적의 타입에 따라 증가시키고
                 gameMgr.PlayerDamageUp(incDamageList[(int)enemyType]);
 
-                float rand = Random.Range(0.0f, 10.0f);
+                // 랜덤한 값을 생성하여 어떤 아이템을 만들지 결정한다.
+                float rand = Random.Range(-5f, 10.0f);
                 MakeItem(rand);
 
+                // 적 캐릭터가 사망했을 때 폭발 애니메이션을 사망한 위치에 생성해서 표시해준다.
+                GameObject exp = Instantiate(expAnim, tr.position, Quaternion.identity);
+                exp.transform.localScale = expAnimScale;
+                // 애니메이션의 시간이 1초 정도이므로 조금 여유를 두고 제거한다.
+                Destroy(exp, 1.15f);
+
+                
                 // 제거한다.    
                 Destroy(gameObject);
             }
@@ -137,10 +154,11 @@ public class EnemyStelarScr : EnemyInfo
 
     }
 
-    void MakeItem(float num)
+    // 사망시 아이템을 생성
+    protected override void MakeItem(float num)
     {
         GameObject item = new GameObject();
-        Debug.Log("Random: " + num);
+        //Debug.Log("Random: " + num);
 
 
         if (num >= 9.5f)
@@ -163,10 +181,17 @@ public class EnemyStelarScr : EnemyInfo
         {
             item = items[(int)ItemType.ScoreUp];
         }
+        else
+        {
+            item = null;
+        }
 
-        Debug.Log(item.name);
+        if (item != null)
+        {
+            //Debug.Log(item.name);
 
-        Instantiate(item, tr.position, Quaternion.identity);
+            Instantiate(item, tr.position, Quaternion.identity);
+        }
     }
 
 

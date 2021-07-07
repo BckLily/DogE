@@ -9,6 +9,10 @@ public class EnemyMakerScr : MonoBehaviour
 
     GameObject[] enemies; // 생성할 Enemy (나중에는 리스트)
 
+    enum Enemy
+    {
+        Stelar=1, Beet=0, 
+    }
 
     [Header("- Enemy Pos")]
     [SerializeField]
@@ -38,15 +42,15 @@ public class EnemyMakerScr : MonoBehaviour
 
         // 최대 생성 높이 및 생성될 x좌표
         maxHeight = 3.5f;
-        minHeight = 1.5f;
+        minHeight = 1f;
         rightPos = 12f;
 
         // 한 세트 생성
         makeEnemyNumber = 1;
 
         // 적 생성하는 시간
-        enemyMakeDelay = 6f;
-        enemyMakeTime = 1f;
+        enemyMakeDelay = 4f;
+        enemyMakeTime = 2f;
 
     }
 
@@ -74,10 +78,10 @@ public class EnemyMakerScr : MonoBehaviour
             float heightPos = Random.Range(minHeight, maxHeight);
             Vector3 makePos = new Vector3(rightPos, heightPos, 0);
 
-            var enemy1 = Instantiate(enemies[0], makePos, Quaternion.identity);
+            var enemy1 = Instantiate(enemies[(int)Enemy.Stelar], makePos, Quaternion.identity);
 
             makePos.y = (makePos.y * -1);
-            var enemy2 = Instantiate(enemies[0], makePos, Quaternion.identity);
+            var enemy2 = Instantiate(enemies[(int)Enemy.Stelar], makePos, Quaternion.identity);
 
             //makePos.x += 2;
 

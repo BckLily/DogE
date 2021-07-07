@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
 
 #if UNITY_EDITOR
 
-        Debug.Log("Player Hit");
+        //Debug.Log("Player Hit");
 
 
 #endif
@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
         {
             // 플레이어 사망
 
-            Debug.Log("Player Die");
+            //Debug.Log("Player Die");
         }
     }
 
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
 
 #if UNITY_EDITOR
 
-        Debug.Log("Player Damage Increasesd");
+        //Debug.Log("Player Damage Increasesd");
 
 #endif 
 

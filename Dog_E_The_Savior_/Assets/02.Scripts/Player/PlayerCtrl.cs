@@ -60,7 +60,7 @@ public class PlayerCtrl : MonoBehaviour
         gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
 
         // 플레이어 총알 오브젝트 위치
-        var _bullet_Path = "Prefabs/Bullets/Bullet";
+        var _bullet_Path = "Prefabs/Bullets/Player/Bullet";
         bullet = Resources.Load<GameObject>(_bullet_Path);
 
         enemies = new List<GameObject>();
