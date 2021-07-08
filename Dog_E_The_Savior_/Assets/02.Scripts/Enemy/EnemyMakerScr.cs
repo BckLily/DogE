@@ -22,7 +22,7 @@ public class EnemyMakerScr : MonoBehaviour
     float rightPos; // 생성될 위치 (오른쪽 화면 밖)
 
     // 한 번에 생성할 최대 적 set
-    int makeEnemyNumber;
+    Enemy makeEnemyNumber;
 
     [Header("- Enemy Make Data")]
     [SerializeField]
@@ -46,11 +46,13 @@ public class EnemyMakerScr : MonoBehaviour
         rightPos = 12f;
 
         // 한 세트 생성
-        makeEnemyNumber = 1;
+        makeEnemyNumber = Enemy.Stelar;
 
         // 적 생성하는 시간
         enemyMakeDelay = 4f;
         enemyMakeTime = 2f;
+
+
 
     }
 
@@ -68,24 +70,35 @@ public class EnemyMakerScr : MonoBehaviour
     // 적 생성 함수
     void MakeEnemy()
     {
-        enemyMakeTime += Time.deltaTime;
-
-        if (enemyMakeTime >= enemyMakeDelay)
+        // 생성할 적 캐릭터가 Stelar일 때
+        if (makeEnemyNumber == Enemy.Stelar)
         {
-            enemyMakeTime -= enemyMakeDelay;
+            enemyMakeTime += Time.deltaTime;
 
-            // 생성될 높이를 랜덤으로 설정.
-            float heightPos = Random.Range(minHeight, maxHeight);
-            Vector3 makePos = new Vector3(rightPos, heightPos, 0);
+            if (enemyMakeTime >= enemyMakeDelay)
+            {
+                enemyMakeTime -= enemyMakeDelay;
 
-            var enemy1 = Instantiate(enemies[(int)Enemy.Stelar], makePos, Quaternion.identity);
+                // 생성될 높이를 랜덤으로 설정.
+                float heightPos = Random.Range(minHeight, maxHeight);
+                Vector3 makePos = new Vector3(rightPos, heightPos, 0);
 
-            makePos.y = (makePos.y * -1);
-            var enemy2 = Instantiate(enemies[(int)Enemy.Stelar], makePos, Quaternion.identity);
+                var enemy1 = Instantiate(enemies[(int)Enemy.Stelar], makePos, Quaternion.identity);
 
-            //makePos.x += 2;
+                makePos.y = (makePos.y * -1);
+                var enemy2 = Instantiate(enemies[(int)Enemy.Stelar], makePos, Quaternion.identity);
+
+                //makePos.x += 2;
+
+            }
 
         }
+        // 생성할 적 캐릭터가 Beet일 때.
+        else if (makeEnemyNumber == Enemy.Beet)
+        {
+
+        }
+
 
     }
 

@@ -49,7 +49,7 @@ public class EnemyBulletChasingScr : MonoBehaviour
         
 
         // 제거 시간 설정
-        removeTime = 3.5f;
+        removeTime = 3f;
         // 이동 속도 설정
         speed = 2f;
 

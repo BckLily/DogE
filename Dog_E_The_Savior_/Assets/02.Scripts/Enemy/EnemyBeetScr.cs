@@ -399,7 +399,9 @@ public class EnemyBeetScr : EnemyInfo
             // bullet 생성.
             GameObject __bullet = Instantiate(bullet, firePos.transform.position, Quaternion.identity);
             // 유도탄이므로 피하기 쉽게 약간 위쪽으로 발사하도록 설정.
-            __bullet.GetComponent<Rigidbody2D>().AddForce((-firePos.right + firePos.up).normalized * 2f, ForceMode2D.Impulse);
+            // 위쪽으로 발사해버리니까 가만히 있어도 피해지는 상황이 발생한다...
+            // 일단 발사하는 힘을 조금 약하게...
+            __bullet.GetComponent<Rigidbody2D>().AddForce((-firePos.right + firePos.up).normalized * 0.5f, ForceMode2D.Impulse);
         }
 
 
