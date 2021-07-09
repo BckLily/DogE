@@ -21,6 +21,33 @@ public class GameManager : MonoBehaviour
     Text scoreText; // 점수를 표시할 텍스트
     Text boomText; // 폭탄의 개수를 표시할 텍스트
     string boomBaseText; // 폭탄 기본 문자열
+    public Transform bossCanvas; // 보스 관련 UI를 가지고 있는 Cavnas
+    Text bossNameText; // 보스 이름을 표시해줄 Text
+    string bossName; // 보스 이름 저장...?
+    public string SetBossName
+    {
+        set
+        {
+            bossName = value;
+        }
+    }
+    Transform bossHPBar; // 보스의 HP바가 있는 위치.
+    [SerializeField]
+    Image[] bossHPImages; // 보스 hp바 이미지들.
+    enum BossHPImage
+    {
+        head = 0, middle, tail,
+    }
+    Text bossHPText; // 보스의 현재 남은 HP를 표시해줄 텍스트
+    float bossHP; // 보스의 현재 HP
+    public float SetBossHP
+    {
+        set
+        {
+            bossHP = value;
+        }
+    }
+
 
     //[Header("- Game Info")]
     //[SerializeField]
@@ -28,7 +55,6 @@ public class GameManager : MonoBehaviour
 
     // 보스전이 시작되었는가 확인.
     public bool isBossStart;
-
 
 
     private void Awake()
@@ -48,6 +74,18 @@ public class GameManager : MonoBehaviour
         atkDamageText = uiCanvas.Find("AtkDamage").Find("AtkDamageText").GetComponent<Text>();
         scoreText = uiCanvas.Find("GameScore").Find("GameScoreText").GetComponent<Text>();
         boomText = uiCanvas.Find("BoomCanvas").Find("BoomCountText").GetComponent<Text>();
+
+        // 보스전 관련 UI를 찾아서 저장
+        bossCanvas = uiCanvas.Find("BossCanvas").GetComponent<Transform>();
+        bossNameText = bossCanvas.Find("BossName").GetComponent<Text>();
+        bossHPBar = bossCanvas.Find("BossHP").GetComponent<Transform>();
+        bossHPImages = bossHPBar.GetComponentsInChildren<Image>();
+        //Debug.Log("이미지 길이: " + bossHPImages.Length);
+        bossHPText = bossHPBar.Find("BossHPFloat").GetComponent<Text>();
+
+        // 보스전 시작하면 보이면 되기 때문에 Canvas를 Active false로 한다.
+        // 보스전 이 끝나면 다시 비활성화 하게 한다.
+        bossCanvas.gameObject.SetActive(false);
 
         // 공격력 표시
         atkBaseText = "공격력: ";
@@ -166,12 +204,21 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator BossStart()
     {
+        // 보스 관련 정보를 보여주는 Canvas를 On으로 한다.
+        bossCanvas.gameObject.SetActive(true);
+        // 보스 이름 설정
+        bossNameText.text = bossName;
+
+        // 보스전 진행 중일 때만
         while (isBossStart)
         {
+            //Debug.Log("Boss HP Setting");
             yield return new WaitForSeconds(0.1f);
 
-
+            // 보스 체력 설정. 보스의 체력이 깎일때마다 보스에서 SetBossHP로 값 보내주면 되지 않을까.
+            bossHPText.text = string.Format("{0:F2}", bossHP);
         }
+
     }
 
 

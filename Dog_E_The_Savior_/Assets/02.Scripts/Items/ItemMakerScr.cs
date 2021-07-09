@@ -64,7 +64,7 @@ public class ItemMakerScr : MonoBehaviour
             //Quaternion rot = Quaternion.Euler(playerTr.position - tr.position);
             Quaternion rot = Quaternion.Euler(dir);
 
-            Debug.Log("ITEM MAKE");
+            //Debug.Log("ITEM MAKE");
             Instantiate(damageItem, pos, rot);
         }
 

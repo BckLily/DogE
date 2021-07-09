@@ -158,7 +158,7 @@ public class EnemyStelarScr : EnemyInfo
     protected override void MakeItem(float num)
     {
         GameObject item;
-        Debug.Log("Random: " + num);
+        //Debug.Log("Random: " + num);
 
 
         if (num >= 9.5f)
@@ -192,7 +192,7 @@ public class EnemyStelarScr : EnemyInfo
         }
 
 
-        Debug.Log(item.name);
+        //Debug.Log(item.name);
         Instantiate(item, tr.position, Quaternion.identity);
 
     }

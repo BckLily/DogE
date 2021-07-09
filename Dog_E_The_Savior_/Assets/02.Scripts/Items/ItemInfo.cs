@@ -46,18 +46,18 @@ abstract public class ItemInfo : MonoBehaviour
         {
             yield return new WaitForSeconds(0.1f);
 
-            Debug.Log(tr.position.x);
-            Debug.Log(tr.position.y);
+            //Debug.Log(tr.position.x);
+            //Debug.Log(tr.position.y);
 
             if (Mathf.Abs(tr.position.x) <= 7.5f && Mathf.Abs(tr.position.y) <= 4f)
             {
-                Debug.Log("GET IN");
+                //Debug.Log("GET IN");
                 col2D.enabled = true;
                 yield break;
             }
             else
             {
-                Debug.Log("GET OUT");
+                //Debug.Log("GET OUT");
             }
         }
     }

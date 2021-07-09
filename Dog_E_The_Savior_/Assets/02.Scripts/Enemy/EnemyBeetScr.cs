@@ -97,8 +97,10 @@ public class EnemyBeetScr : EnemyInfo
 
         // 추가요소
         // 보스의 체력바
-
-
+        // 보스의 체력을 게임 매니저에게 알려준다.
+        gameMgr.SetBossHP = hp;
+        // 보스의 이름을 설정.
+        gameMgr.SetBossName = "Beet";
     }
 
     // Update is called once per frame
@@ -472,8 +474,23 @@ public class EnemyBeetScr : EnemyInfo
     }
 
     // 아이템 생성.
+    // num 값을 사용해서 몇 개의 아이템을 만들지 결정한다.
+    // 기본적으로 1개의 power, 1개의 boom을 준다.
     protected override void MakeItem(float num)
     {
+        Debug.Log(num);
+        Instantiate(items[(int)ItemType.DamageUp], tr.position, Quaternion.identity);
+        num -= 1;
+        Instantiate(items[(int)ItemType.BoomItem], tr.position, Quaternion.identity);
+        num -= 1;
+
+        while (num > 0)
+        {
+            int idx = Random.Range(0, 5);
+
+            Instantiate(items[idx], tr.position, Quaternion.identity);
+            num -= 1;
+        }
 
     }
 
@@ -484,13 +501,33 @@ public class EnemyBeetScr : EnemyInfo
         {
             hp -= gameMgr.GetBulletDamage();
 
+            // 피격시 보스의 남은 체력 표시
+            gameMgr.SetBossHP = hp;
+
+            gameMgr.GameScoreUp(1f);
 
             Destroy(collision.gameObject);
             if (hp <= 0)
             {
-                Instantiate(expAnim, tr.position, Quaternion.identity);
+                // 폭발 이펙트 생성.
+                // 현재 일반 적과 동일한 이펙트를 사용하고 있어서 스케일을 키워서 표시
+                GameObject exp = Instantiate(expAnim, tr.position, Quaternion.identity);
+                exp.transform.localScale *= 2f;
+                Destroy(exp, 1.1f);
+
+                // 사망시 아이템 생성.
+                int number = Random.Range(3, 6);
+                MakeItem((float)number);
+
+                // 보스전 끝났다고 표시
+                gameMgr.isBossStart = false;
+                // EnemyMakerScr의 스테이지 시작 점수를 새로 설정.
+                GameObject.Find("EnemyMaker").GetComponent<EnemyMakerScr>().EndBoss();
 
 
+                // 캔버스를 비활성화
+                gameMgr.bossCanvas.gameObject.SetActive(false);
+                // 보스 제거
                 Destroy(this.gameObject);
             }
         }

@@ -36,7 +36,7 @@ public class ItemShieldScr : ItemInfo
     {
         PlayerCtrl player = playerTr.GetComponent<PlayerCtrl>();
         player.isShieldActive = true;
-        player.shieldActiveTime += 3f;
+        player.shieldActiveTime += 8f;
         
 
     }

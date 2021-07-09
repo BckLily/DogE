@@ -32,7 +32,7 @@ public class EnemyMakerScr : MonoBehaviour
     // 스테이지 시작 점수
     // 점수가 몇 점 증가하면 보스 스테이지가 시작되게 한다.
     [SerializeField]
-    float stageStartScore;
+    public float stageStartScore;
     // 보스 스테이지를 시작하게 할 점수
     float bossStartScore;
 
@@ -88,6 +88,13 @@ public class EnemyMakerScr : MonoBehaviour
     }
 
 
+    public void EndBoss()
+    {
+        stageStartScore = gameMgr.GetScore;
+        // 원래 생성 속도로 높임.
+        enemyMakeDelay *= 2f;
+    }
+
 
     // 적 생성 함수
     void MakeEnemy()
@@ -117,6 +124,9 @@ public class EnemyMakerScr : MonoBehaviour
         // 생성할 적 캐릭터가 Beet일 때.
         else if (makeEnemyNumber == Enemy.Beet)
         {
+            // 보스 생성시 시작되는 코루틴
+            StartCoroutine(gameMgr.BossStart());
+
             // 보스가 생성되고 바로 일반 몬스터가 생성되지 않게 Time을 초기화.
             enemyMakeTime = 0f;
             // 보스 전에서는 일반 몬스터의 생성 딜레이를 늘려준다.
@@ -132,7 +142,6 @@ public class EnemyMakerScr : MonoBehaviour
 
 
         }
-
 
     }
 
