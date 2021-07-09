@@ -13,6 +13,7 @@ TagManager:
   - WALL
   - SHIELD
   - ITEM
+  - BOSS
   layers:
   - Default
   - TransparentFX

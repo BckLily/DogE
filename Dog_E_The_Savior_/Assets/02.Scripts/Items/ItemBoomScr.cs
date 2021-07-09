@@ -18,6 +18,8 @@ public class ItemBoomScr : ItemInfo
         moveDir.x *= 2f;
         moveDir.Normalize();
 
+        //StartCoroutine(CheckPos());
+
         // 아이템이 제거되는 시간
         removeTime = 6f;
         Destroy(gameObject, removeTime);

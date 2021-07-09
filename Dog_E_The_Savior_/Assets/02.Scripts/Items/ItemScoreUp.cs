@@ -22,6 +22,10 @@ public class ItemScoreUp : ItemInfo
 
         inc_Score = 50f;
 
+
+        //StartCoroutine(CheckPos());
+
+        // 아이템이 사라질 시간
         removeTime = 10f;
         // 일정 시간 이후 사라지게 설정
         Destroy(this.gameObject, removeTime);

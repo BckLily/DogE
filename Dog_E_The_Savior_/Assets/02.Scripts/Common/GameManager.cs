@@ -22,10 +22,12 @@ public class GameManager : MonoBehaviour
     Text boomText; // 폭탄의 개수를 표시할 텍스트
     string boomBaseText; // 폭탄 기본 문자열
 
-    [Header("- Game Info")]
-    [SerializeField]
+    //[Header("- Game Info")]
+    //[SerializeField]
     private float score; // 게임의 점수
 
+    // 보스전이 시작되었는가 확인.
+    public bool isBossStart;
 
 
 
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         boomBaseText = "X ";
         boomText.text = boomBaseText + boomCount;
 
+        isBossStart = false;
     }
 
     // Update is called once per frame
@@ -80,11 +83,11 @@ public class GameManager : MonoBehaviour
     // PlayerHit()
     public void PlayerHit()
     {
-        // 감소시킬 공격력 %설정 (10 ~ 30)%
-        var per = Random.Range(0.1f, 0.3f);
+        // 감소시킬 공격력 %설정 (5 ~ 20)%
+        var per = Random.Range(0.05f, 0.2f);
         // 최종 감소할 공격력
         // 최소 0.25이 감소하고 %로 추가 감소.
-        float dec_bulletDamage = 0.25f + GetBulletDamage() * per;
+        float dec_bulletDamage = 0.15f + GetBulletDamage() * per;
 
 #if UNITY_EDITOR
 
@@ -130,6 +133,17 @@ public class GameManager : MonoBehaviour
 
     }
 
+    // 점수를 보내주는 함수
+    public float GetScore
+    {
+        get
+        {
+            return score;
+        }
+
+    }
+
+
     // 점수 증가 함수.
     public void GameScoreUp(float inc_Score)
     {
@@ -149,5 +163,17 @@ public class GameManager : MonoBehaviour
         boomCount -= 1;
         boomText.text = boomBaseText + boomCount;
     }
+
+    public IEnumerator BossStart()
+    {
+        while (isBossStart)
+        {
+            yield return new WaitForSeconds(0.1f);
+
+
+        }
+    }
+
+
 
 }

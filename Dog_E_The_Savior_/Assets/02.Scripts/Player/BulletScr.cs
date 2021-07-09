@@ -19,7 +19,7 @@ public class BulletScr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tr = GetComponent<Transform>();
+        tr = gameObject.GetComponent<Transform>();
 
         // 총알의 이동 속도 3f
         speed = 12f;

@@ -20,7 +20,7 @@ public class EnemyStelarScr : EnemyInfo
     void Start()
     {
         //// Stelar Enemy 위치 저장
-        //tr = GetComponent<Transform>();
+        //tr = gameObject.GetComponent<Transform>();
 
         //gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
 
@@ -30,7 +30,7 @@ public class EnemyStelarScr : EnemyInfo
         // Stelar Enemy HP
         hp = 10 + HpDice((int)DiceCount.normal, (float)MaxHPperDice.normal);
         // hp *= stageCorr; // 스테이지의 진행에 따라 hp에 대한 보정이 들어간다. correction
-        Debug.Log("Stelar HP: " + hp);
+        //Debug.Log("Stelar HP: " + hp);
 
 
         // Stelar Enemy가 기본적으로 움직이는 방향
@@ -138,7 +138,7 @@ public class EnemyStelarScr : EnemyInfo
                 GameObject exp = Instantiate(expAnim, tr.position, Quaternion.identity);
                 exp.transform.localScale = expAnimScale;
                 // 애니메이션의 시간이 1초 정도이므로 조금 여유를 두고 제거한다.
-                Destroy(exp, 1.15f);
+                Destroy(exp.gameObject, 1.15f);
 
                 
                 // 제거한다.    
@@ -157,41 +157,44 @@ public class EnemyStelarScr : EnemyInfo
     // 사망시 아이템을 생성
     protected override void MakeItem(float num)
     {
-        GameObject item = new GameObject();
-        //Debug.Log("Random: " + num);
+        GameObject item;
+        Debug.Log("Random: " + num);
 
 
         if (num >= 9.5f)
         {
             item = items[(int)ItemType.BoomItem];
+            //Instantiate(items[(int)ItemType.BoomItem], tr.position, Quaternion.identity);
         }
         else if (num >= 8.5f)
         {
             item = items[(int)ItemType.ShieldItem];
+            //Instantiate(items[(int)ItemType.ShieldItem], tr.position, Quaternion.identity);
         }
         else if (num >= 7f)
         {
             item = items[(int)ItemType.AtkSpeedUp];
+            //Instantiate(items[(int)ItemType.AtkSpeedUp], tr.position, Quaternion.identity);
         }
         else if (num >= 4f)
         {
             item = items[(int)ItemType.DamageUp];
+            //Instantiate(items[(int)ItemType.DamageUp], tr.position, Quaternion.identity);
         }
-        else if(num >= 0f)
+        else if (num >= 0f)
         {
             item = items[(int)ItemType.ScoreUp];
+            //Instantiate(items[(int)ItemType.ScoreUp], tr.position, Quaternion.identity);
         }
         else
         {
-            item = null;
+            return;
         }
 
-        if (item != null)
-        {
-            //Debug.Log(item.name);
 
-            Instantiate(item, tr.position, Quaternion.identity);
-        }
+        Debug.Log(item.name);
+        Instantiate(item, tr.position, Quaternion.identity);
+
     }
 
 

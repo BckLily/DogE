@@ -72,7 +72,7 @@ abstract public class EnemyInfo : MonoBehaviour
     protected void Awake()
     {
         // 적 게임 오브젝트의 위치 저장
-        tr = GetComponent<Transform>();
+        tr = gameObject.GetComponent<Transform>();
         // 게임 매니저 저장.
         gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
 

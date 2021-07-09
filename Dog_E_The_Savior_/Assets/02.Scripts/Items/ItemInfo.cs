@@ -9,6 +9,8 @@ abstract public class ItemInfo : MonoBehaviour
     protected Transform tr; // 아이템의 위치
     protected Transform playerTr; // 플레이어의 위치
 
+    protected CircleCollider2D col2D; //  콜라이더 활성화 비활성화
+
     protected float speed; // 아이템 이동 속도
 
     protected Vector3 moveDir; // 아이템이 이동하는 방향
@@ -26,9 +28,38 @@ abstract public class ItemInfo : MonoBehaviour
         gameMgr = GameObject.Find("GameMgr").GetComponent<GameManager>();
 
         // 아이템의 위치와 플레이어의 위치 설정
-        tr = GetComponent<Transform>();
+        tr = this.gameObject.GetComponent<Transform>();
         playerTr = GameObject.Find("DogE").GetComponent<Transform>();
+        
+        // 화면 밖에서 아이템이 생성되더라도 맵 안으로 들어갈 수 있게 콜라이더 껐다가
+        // 나중에 다시 켠다.
+        col2D = gameObject.GetComponent<CircleCollider2D>();
+        col2D.enabled = false;
+        StartCoroutine(CheckPos());
 
+    }
+
+
+    protected IEnumerator CheckPos()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f);
+
+            Debug.Log(tr.position.x);
+            Debug.Log(tr.position.y);
+
+            if (Mathf.Abs(tr.position.x) <= 7.5f && Mathf.Abs(tr.position.y) <= 4f)
+            {
+                Debug.Log("GET IN");
+                col2D.enabled = true;
+                yield break;
+            }
+            else
+            {
+                Debug.Log("GET OUT");
+            }
+        }
     }
 
 
@@ -53,6 +84,8 @@ abstract public class ItemInfo : MonoBehaviour
         if (collision.CompareTag("PLAYER"))
         {
             GetItem();
+
+            //Debug.Log("Destroy this Game Object: " + this.gameObject.name);
 
             Destroy(this.gameObject);
         }

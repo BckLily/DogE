@@ -26,6 +26,8 @@ public class ItemAtkSpeedUpScr : ItemInfo
 
         removeTime = 8f;
 
+        //StartCoroutine(CheckPos());
+
         Destroy(this.gameObject, removeTime);
 
     }
@@ -40,7 +42,6 @@ public class ItemAtkSpeedUpScr : ItemInfo
     protected override void GetItem()
     {
         playerTr.gameObject.GetComponent<PlayerCtrl>().atkSpeedUp += atkSpeedUp;
-
 
     }
 

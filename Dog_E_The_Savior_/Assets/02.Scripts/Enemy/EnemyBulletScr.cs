@@ -20,7 +20,7 @@ public class EnemyBulletScr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tr = GetComponent<Transform>();
+        tr = gameObject.GetComponent<Transform>();
 
         // 총알의 이동 속도
         speed = 8f;

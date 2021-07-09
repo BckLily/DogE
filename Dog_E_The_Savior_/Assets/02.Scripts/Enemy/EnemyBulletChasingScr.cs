@@ -21,7 +21,7 @@ public class EnemyBulletChasingScr : MonoBehaviour
     void Start()
     {
         // 총알 오브젝트 위치
-        tr = GetComponent<Transform>();
+        tr = gameObject.GetComponent<Transform>();
         // 총알 오브젝트 리지드바디
         rb2d = tr.GetComponent<Rigidbody2D>();
         // 타겟 태그

@@ -5,8 +5,6 @@ using UnityEngine;
 public class ItemShieldScr : ItemInfo
 {
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +14,9 @@ public class ItemShieldScr : ItemInfo
         // 아이템이 이동하는 방향 (플레이어의 반대 방향)
         moveDir = tr.position - playerTr.position;
         moveDir.Normalize();
+
+
+        //StartCoroutine(CheckPos());
 
         // 아이템이 사라질 시간
         removeTime = 12f;

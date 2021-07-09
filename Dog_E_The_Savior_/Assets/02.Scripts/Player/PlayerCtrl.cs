@@ -50,7 +50,7 @@ public class PlayerCtrl : MonoBehaviour
     void Start()
     {
         // 플레이어 위치 저장
-        tr = GetComponent<Transform>();
+        tr = gameObject.GetComponent<Transform>();
         // 플레이어 오브젝트 저장
         player = gameObject;
         // 플레이어 오브젝트 이미지 렌더러 저장
