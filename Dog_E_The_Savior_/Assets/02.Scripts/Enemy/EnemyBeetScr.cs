@@ -99,6 +99,8 @@ public class EnemyBeetScr : EnemyInfo
         // 보스의 체력바
         // 보스의 체력을 게임 매니저에게 알려준다.
         gameMgr.SetBossHP = hp;
+        // 보스의 생성될 때의 체력을 최대체력으로 세팅한다.
+        gameMgr.SetBossMaxHp = hp;
         // 보스의 이름을 설정.
         gameMgr.SetBossName = "Beet";
     }
@@ -524,6 +526,11 @@ public class EnemyBeetScr : EnemyInfo
                 // EnemyMakerScr의 스테이지 시작 점수를 새로 설정.
                 GameObject.Find("EnemyMaker").GetComponent<EnemyMakerScr>().EndBoss();
 
+                // 적 타입에 따른 플레이어의 공격력 상승.
+                // 보스 타입.
+                // 가독성이 약간 떨어지는 것 같다.
+                // gameMgr.PlayerDamageUp(incDamageList[EnemyType.Boss])를 그대로 사용하는게 더 좋았을 것 같다.
+                gameMgr.PlayerDamageUp(incDamageList[(int)enemyType]);
 
                 // 캔버스를 비활성화
                 gameMgr.bossCanvas.gameObject.SetActive(false);

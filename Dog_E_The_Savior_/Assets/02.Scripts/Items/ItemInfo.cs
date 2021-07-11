@@ -29,7 +29,17 @@ abstract public class ItemInfo : MonoBehaviour
 
         // 아이템의 위치와 플레이어의 위치 설정
         tr = this.gameObject.GetComponent<Transform>();
-        playerTr = GameObject.Find("DogE").GetComponent<Transform>();
+
+        GameObject player = GameObject.FindGameObjectWithTag("PLAYER");
+        if (player != null)
+        {
+            playerTr = player.GetComponent<Transform>();
+        }
+        else
+        {
+            Vector3 pos = new Vector3(tr.position.x - 16f, tr.position.y, tr.position.z);
+            playerTr.position = pos;
+        }
         
         // 화면 밖에서 아이템이 생성되더라도 맵 안으로 들어갈 수 있게 콜라이더 껐다가
         // 나중에 다시 켠다.

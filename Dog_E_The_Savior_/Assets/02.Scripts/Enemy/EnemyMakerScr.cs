@@ -23,15 +23,15 @@ public class EnemyMakerScr : MonoBehaviour
     // 한 번에 생성할 최대 적 set
     Enemy makeEnemyNumber;
 
-    //[Header("- Enemy Make Data")]
-    //[SerializeField]
+    [Header("- Enemy Make Data")]
+    [SerializeField]
     float enemyMakeDelay; // 적 생성 딜레이
     //[SerializeField]
     float enemyMakeTime; //  다수 적 생성시 간격                   적 생성 후 지난 시간
 
     // 스테이지 시작 점수
     // 점수가 몇 점 증가하면 보스 스테이지가 시작되게 한다.
-    [SerializeField]
+    //[SerializeField]
     public float stageStartScore;
     // 보스 스테이지를 시작하게 할 점수
     float bossStartScore;
@@ -92,7 +92,9 @@ public class EnemyMakerScr : MonoBehaviour
     {
         stageStartScore = gameMgr.GetScore;
         // 원래 생성 속도로 높임.
-        enemyMakeDelay *= 2f;
+        enemyMakeDelay /= 2f;
+        // 연속적으로 생성되지 않게 Make Time을 0으로 초기화한다.
+        enemyMakeTime -= enemyMakeDelay;
     }
 
 

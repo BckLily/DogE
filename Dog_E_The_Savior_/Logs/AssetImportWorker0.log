@@ -1,52 +1,197 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1083; Version 2009; 64bit' Language: 'ko' Physical Memory: 3985 MB
+OS: 'Windows 10 Home; OS build 19043.1083; Version 2009; 64bit' Language: 'ko' Physical Memory: 32693 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+D:\Unity\2020.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_
+D:/Yeil/DogE/Dog_E_The_Savior_
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60963
-Successfully changed project path to: D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_
-D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_
+10898
+Successfully changed project path to: D:/Yeil/DogE/Dog_E_The_Savior_
+D:/Yeil/DogE/Dog_E_The_Savior_
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 112.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 44.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/LILY/UnityEngine/DogE/Dog_E_The_Savior_/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Yeil/DogE/Dog_E_The_Savior_/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTS 450 (ID=0x1245)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
     Vendor:   
-    VRAM:     458 MB
-    Driver:   23.21.13.9135
+    VRAM:     5991 MB
+    Driver:   30.0.14.7111
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Mono path[0] = 'D:/Unity/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006981 seconds.
+Register platform support module: D:/Unity/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001008 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 95.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.128 seconds
+- Completed reload, in  1.583 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.097725 seconds.
+Registered in 0.003183 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.886 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.7 MB.
+System memory in use after: 96.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2543.
+Total: 1.966600 ms (FindLiveObjects: 0.203800 ms CreateObjectMapping: 0.051700 ms MarkObjects: 1.653500 ms  DeleteObjects: 0.056900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Clean Settings UI
+  artifactKey: Guid(74a7f833f4dae3d478ec060269d72ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Clean Settings UI using Guid(74a7f833f4dae3d478ec060269d72ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f407487d4b5456cc0262dc63f7394291') in 0.004400 seconds
+  Import took 0.007438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.764122 seconds.
+  path: Assets/Resources/BackGroundImage
+  artifactKey: Guid(efcfa68dae8fa474493759ea1f618305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/BackGroundImage using Guid(efcfa68dae8fa474493759ea1f618305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47bc417209cfb310d625825e668bd495') in 0.001672 seconds
+  Import took 0.004561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.600610 seconds.
+  path: Assets/Resources/Coins
+  artifactKey: Guid(f402ba76b728ef44b9dccb580c6184e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Coins using Guid(f402ba76b728ef44b9dccb580c6184e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d15f652fe8320f136f1352b0ea53355') in 0.001661 seconds
+  Import took 0.004674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.168533 seconds.
+  path: Assets/Resources/EnemyImage
+  artifactKey: Guid(45c3005c223fefc45860be3951a222f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyImage using Guid(45c3005c223fefc45860be3951a222f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16181bf19bed4b9e6f43fcc880cba1fd') in 0.001575 seconds
+  Import took 0.004405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.326998 seconds.
+  path: Assets/Resources/UIImage
+  artifactKey: Guid(cd25379a087d8c7488bbe49e70cfbc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage using Guid(cd25379a087d8c7488bbe49e70cfbc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d36f263ff7e92a955a708d6deab2a5') in 0.001578 seconds
+  Import took 0.004533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.361161 seconds.
+  path: Assets/Resources/UIImage/red_cross.png
+  artifactKey: Guid(708ef720068973d479c6c019db762c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/red_cross.png using Guid(708ef720068973d479c6c019db762c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6fd7edae2ac5b30bd45bd87bd7f82e') in 0.120632 seconds
+  Import took 0.123842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.555625 seconds.
+  path: Assets/04.Images/UICheck
+  artifactKey: Guid(b38df81fecc0a594e8306274eae41a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/04.Images/UICheck using Guid(b38df81fecc0a594e8306274eae41a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aedbd140aed0bd1de9d96e1aecafa2b0') in 0.001767 seconds
+  Import took 0.004891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 199.559896 seconds.
+  path: Assets/Resources/UIImage/textGetReady.png
+  artifactKey: Guid(954fe48595785844cbcb372f591f9499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/textGetReady.png using Guid(954fe48595785844cbcb372f591f9499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a9c46e110c52e4d1480119590b487a') in 0.010636 seconds
+  Import took 0.014386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.434694 seconds.
+  path: Assets/Resources/UIImage/yellow_cross.png
+  artifactKey: Guid(01ec6bb7c57c57040beb8433b231642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/yellow_cross.png using Guid(01ec6bb7c57c57040beb8433b231642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27cf3ec6237bc5b2ca23b46ffdd09c5') in 0.009657 seconds
+  Import took 0.012932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.464684 seconds.
+  path: Assets/Resources/UIImage/yellow_checkmark.png
+  artifactKey: Guid(4462c25e87b4c9648a4e472dc209bd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/yellow_checkmark.png using Guid(4462c25e87b4c9648a4e472dc209bd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0965413387049f595c8ffcd4e7daed0') in 0.011621 seconds
+  Import took 0.014726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 582.311043 seconds.
+  path: Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png
+  artifactKey: Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png using Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c83ca6a2389291d335bb43c6b1d2031') in 0.015460 seconds
+  Import took 0.018809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.041043 seconds.
+  path: Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png
+  artifactKey: Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png using Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f78e9afd1a32590a15513fd1e1d5b4b') in 0.009185 seconds
+  Import took 0.012383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.369203 seconds.
+  path: Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png
+  artifactKey: Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png using Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7940f54a54240100cabc2af1a65b40f') in 0.009626 seconds
+  Import took 0.012792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 341.124445 seconds.
+  path: Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png
+  artifactKey: Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/Genesis 32X SCD - Ecco the Dolphin - Alphabet.png using Guid(bc2433e12b4aaaf45b0c9373065fc540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0bb84b989da43cb0def65bb30268ca1') in 0.062751 seconds
+  Import took 0.066008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.588076 seconds.
+  path: Assets/Resources/UIImage/green_cross.png
+  artifactKey: Guid(41c0eb87ede262642992150f9eda3094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/green_cross.png using Guid(41c0eb87ede262642992150f9eda3094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa950154f05f5b6344c9ced23f9e6779') in 0.009767 seconds
+  Import took 0.013308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.642224 seconds.
+  path: Assets/Resources/UIImage/green_checkmark.png
+  artifactKey: Guid(e1fa3e79ada0a144e90221aa80527309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIImage/green_checkmark.png using Guid(e1fa3e79ada0a144e90221aa80527309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60384c7badbc24c6cee745824ae530c') in 0.008385 seconds
+  Import took 0.011776 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

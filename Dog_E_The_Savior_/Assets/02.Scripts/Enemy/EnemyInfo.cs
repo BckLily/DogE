@@ -45,7 +45,7 @@ abstract public class EnemyInfo : MonoBehaviour
 
     [Header("- Player Increase Damage")]
     [SerializeField]
-    protected float[] incDamageList = { 0.5f, 0.75f, 1.0f };
+    protected float[] incDamageList = { 0.5f, 1.25f, 2.5f };
     protected enum EnemyType
     {
         normal = 0, middleBoss, Boss,

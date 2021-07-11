@@ -152,7 +152,7 @@ public class PlayerCtrl : MonoBehaviour
         //Debug.Log("Attack Delay: " + atkDelay);
 
         // 공격 버튼인 J키를 누르면
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.K))
         {
             // 마지막에 공격한 시간을 측정하고
             lastAtkTime += Time.deltaTime;
@@ -165,7 +165,7 @@ public class PlayerCtrl : MonoBehaviour
             }
         }
         // J키를 떼면
-        if (Input.GetKeyUp(KeyCode.J))
+        if (Input.GetKeyUp(KeyCode.K))
         {
             // 다음에 키를 눌렀을 때 바로 공격할 수 있게 설정함.
             lastAtkTime = atkDelay;
@@ -178,10 +178,10 @@ public class PlayerCtrl : MonoBehaviour
 
         ActiveShield();
 
-        if (isBoom)
-        {
-            RemoveEnemy();
-        }
+        //if (isBoom)
+        //{
+        //    RemoveEnemy();
+        //}
         //else
         //{
         //    StopCoroutine(RemoveEnemy());
@@ -261,6 +261,9 @@ public class PlayerCtrl : MonoBehaviour
             gameMgr.UseBoomItem();
             //Debug.Log("USE BOOM");
 
+            // 폭탄을 사용하면 플레이어의 공격력이 소량 증가한다.
+            gameMgr.PlayerDamageUp(gameMgr.GetBulletDamage() * Random.Range(0.05f, 0.15f));
+
             // ENEMY Tag와 E_BULLET Tag를 가진 모든 GameObject를 검출한다.
             GameObject[] enemyTags = GameObject.FindGameObjectsWithTag("ENEMY");
             GameObject[] eBulletTags = GameObject.FindGameObjectsWithTag("E_BULLET");
@@ -270,8 +273,10 @@ public class PlayerCtrl : MonoBehaviour
             enemies.AddRange(eBulletTags);
 
 
-            // 전부 제거한다.
-            isBoom = true;
+            //// 전부 제거한다.
+            //isBoom = true;
+            RemoveEnemy();
+
 
         }
     }
